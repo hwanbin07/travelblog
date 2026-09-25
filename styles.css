@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header-image {
+    min-height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                      url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.header-image h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.header-image p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1f4e5f;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #163b48;
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1f4e5f;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2c6e7f;
+}
+
+/* Home Page */
+.intro {
+    text-align: center;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destination-list article {
+    flex: 1 1 calc(50% - 20px);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Articles */
+.articles-section > h2 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 1;
+}
+
+.column article {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.column article img {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.column article a {
+    color: #1f4e5f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.column article a:hover {
+    text-decoration: underline;
+}
+
+/* About Page */
+.about-section,
+.interests {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.interests ul {
+    padding-left: 25px;
+}
+
+/* Contact Page */
+.contact-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    background-color: #eef5f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4e5f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163b48;
+}
+
+/* Footer */
+footer {
+    background-color: #1f4e5f;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .header-image {
+        min-height: 220px;
+    }
+
+    .header-image h1 {
+        font-size: 34px;
+    }
+
+    .header-image p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .destination-list {
+        flex-direction: column;
+    }
+
+    .destination-list article {
+        flex: 1 1 100%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column article img {
+        height: auto;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+}
